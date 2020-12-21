@@ -53,7 +53,6 @@ public class TwitterInterceptor implements Interceptor {
         } catch (JSONException e) {
             logger.error("Error parsing EventBody to JSON. ", e);
         }
-
         return event;
     }
 
@@ -65,7 +64,6 @@ public class TwitterInterceptor implements Interceptor {
             Event intercepted = intercept(event);
             result.add(intercepted);
         }
-
         return result;
     }
 
